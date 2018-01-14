@@ -2,12 +2,15 @@
 """
 Created on Sun Jan 14 09:46:58 2018
 
+IMPORTANT :
+    1. This project is for a specific type of folder arrangement of dataset
+    2. Please intall : {1.Theano  ,  2.Tensorflow  ,  3.Keras}  before executing it.
+    
+NOTE : Dataset is empty but structured ; use your own
 @author: Udit
 """
 # Convolutional Neural Network
 
-# IMPORTANT
-# Please intall : {1.Theano  ,  2.Tensorflow  ,  3.Keras}  before executing it.
 
 # Importing the required libraries and packages
 from keras.models import Sequential
