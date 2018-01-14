@@ -42,3 +42,12 @@ classifier.add(Dense(output_dim = 128, activation = 'relu'))
 classifier.add(Dense(output_dim = 1, activation = 'sigmoid')) #Full_connection
 
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy']) #compiling
+
+
+"""
+Fitting a CNN to our Classifier requires the following steps :
+    1. Generate more image data from existing dataset by various transformations
+    2. Create batch of training and test test
+    3. Fit the classifier
+"""
+
