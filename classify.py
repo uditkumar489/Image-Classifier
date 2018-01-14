@@ -36,6 +36,10 @@ classifier.add(Convolution2D(32, 3, 3, input_shape = (64, 64, 3), activation = '
 
 classifier.add(MaxPooling2D(pool_size = (2, 2))) #Max_Pooling
 
+# Adding a 2nd convolutional layer
+classifier.add(Convolution2D(32, 3, 3, activation = 'relu'))
+classifier.add(MaxPooling2D(pool_size = (2, 2)))
+
 classifier.add(Flatten()) #Flattening
 
 classifier.add(Dense(output_dim = 128, activation = 'relu'))
