@@ -29,3 +29,16 @@ Building a CNN requires the following steps :
     4. Full connection
     5. Compiling
 """
+
+classifier = Sequential() #CNN initialised
+
+classifier.add(Convolution2D(32, 3, 3, input_shape = (64, 64, 3), activation = 'relu')) #Convolution
+
+classifier.add(MaxPooling2D(pool_size = (2, 2))) #Max_Pooling
+
+classifier.add(Flatten()) #Flattening
+
+classifier.add(Dense(output_dim = 128, activation = 'relu'))
+classifier.add(Dense(output_dim = 1, activation = 'sigmoid')) #Full_connection
+
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy']) #compiling
